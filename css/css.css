@@ -1,0 +1,269 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+:root {
+  --contrast: #131313;
+  --bg: #E4E4E4;
+  --golden: #887854;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--golden);
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: var(--golden);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #6e5f43;
+}
+
+/* Use your variables on elements */
+
+body {
+  background-color: var(--bg);
+  font-family: "Livvic", sans-serif;
+}
+
+main {
+  color: var(--contrast);
+}
+
+.nav {
+  border: 1px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav a {
+  color: var(--golden);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--contrast);
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: var(--bg);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown a {
+  color: var(--golden);
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 14px;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.nav:hover .dropdown {
+  display: block;
+}
+
+.search-input {
+  width: 150px;
+  padding: 8px 12px;
+  border: 2px solid var(--golden);
+  border-radius: 20px;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  color: var(--contrast);
+  background-color: var(--bg);
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--golden);
+}
+
+.search-input::placeholder {
+  color: var(--golden);
+  opacity: 0.7;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 28px;
+  color: var(--contrast);
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  color: var(--contrast);
+  margin-bottom: 40px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image-column {
+  flex: 1;
+}
+
+.rounded-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #D3D3D3;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #D3D3D3;
+  transition: opacity 0.3s ease;
+}
+
+.image-link {
+  display: block;
+}
+
+.image-link:hover img {
+  opacity: 0.5;
+}
+
+.blog-post {
+  max-width: 825px; /* 75% of 1100px */
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.blog-post h1 {
+  font-size: 32px;
+  color: var(--contrast);
+  margin-bottom: 20px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.blog-post h2, .blog-post h3 {
+  font-family: 'Questrial', sans-serif;
+}
+
+.blog-post p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.materials-section {
+  background-color: #f0f0f0;
+  border-left: 4px solid #887854;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.materials-section h3 {
+  color: #887854;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.materials-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.materials-section li {
+  margin-bottom: 10px;
+}
+.step-content {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.step-image {
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.step-text {
+  flex: 1;
+}
+
+.step-content {
+  flex-direction: column;
+}
+
+.step-image {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+

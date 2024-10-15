@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kontakt - budgetbolig</title>
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&family=Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header style="margin-top: 20px; margin-bottom: 20px;">
+    <div style="display: flex;flex-direction: row;width:100%;max-width:1100px;margin: 0 auto 15px;">
+      <div style="flex: 1;"></div>
+      <div style="flex: 1;text-align: center;">
+        <a href="index.html">
+          <img src="images/logo15okt.svg" style="width: 30%;height: auto;" alt="">
+        </a>
+      </div>
+      <div style="flex: 1;display:flex;justify-content:flex-end;align-items:center;">
+        <label>
+          <input class="search-input" placeholder="Søg artikler">
+        </label>
+      </div>
+    </div>
+
+    <div
+      style="display: flex;flex-direction:row;justify-content: space-between;margin:0 auto;max-width: 1100px;width: 100%;border-bottom: 1px solid var(--golden);padding-bottom: 6px;">
+      <div class="nav">
+        <a href="#">DIY-Projekter</a>
+        <div class="dropdown">
+          <a href="blog-post-2.html">IKEA Billy: DIY Snedkermøbel</a>
+          <a href="blog-post-3.html">DIY Spejlramme: Elegant og Budgetvenlig</a>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="#">Interiør på budget</a>
+        <div class="dropdown">
+          <a href="blog-post-1.html">Væglamper: Design vs. Budget</a>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="#">Inspiration og Trends</a>
+      </div>
+      <div class="nav">
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="content">
+      <h1>Kontakt os</h1>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Navn:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="message">Besked:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+      <h1 id="thank-you" style="display: none; text-align: center;">Tak for din henvendelse</h1>
+
+      <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          this.style.display = 'none';
+          document.getElementById('thank-you').style.display = 'block';
+        });
+      </script>
+    </section>
+  </main>
+
+  <script src="js/js.js"></script>
+</body>
+
+</html>
